@@ -6,7 +6,7 @@
     <title>About MinTae</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="main_container">
@@ -20,11 +20,11 @@
         </div>
         <div id="content_container">
             <div id="content_tab">
-                <button class="tablink" onclick="openPage('resume_tab', this, 'red')">Resume</button>
-                <button class="tablink" onclick="openPage('project_tab', this, 'blue')">Projects</button>
-                <button class="tablink" onclick="openPage('lorem_tab', this, 'green')">Lorem</button>
-                <button class="tablink" onclick="openPage('ipsum_tab', this, 'white')">Ipsum</button>
-
+                <button class="tablink" onclick="openPage('resume_tab', this)">Resume</button>
+                <button class="tablink" onclick="openPage('project_tab', this)" id="defaultOpen">Projects</button>
+                <button class="tablink" onclick="openPage('lorem_tab', this)">Lorem</button>
+                <button class="tablink" onclick="openPage('ipsum_tab', this)">Ipsum</button>
+            </div>
                 <div id="resume_tab" class="tabcontent">
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit, sapien consequat ut curabitur varius class iaculis dictumst integer, convallis natoque venenatis montes libero nam sem. Duis suscipit id nibh malesuada integer class litora, ad donec fames viverra fringilla facilisi nunc, commodo habitant vitae ligula facilisis praesent. Vitae vel elementum mus mollis bibendum inceptos nisi, habitant nibh mi mattis sagittis eget tempor natoque, maecenas platea dictum vivamus mauris ullamcorper. Vestibulum mauris dictumst quam suspendisse habitant vulputate massa montes sed risus, tellus purus venenatis commodo laoreet gravida potenti semper tempor ridiculus at, conubia aptent nunc tincidunt accumsan dui sem ante ad.</p>
                     <p>Rutrum sem cras parturient suscipit sociosqu purus mattis, placerat nisl libero imperdiet et lobortis pretium, maecenas himenaeos proin conubia sociis litora. Tristique hendrerit nibh euismod erat magnis varius interdum litora tellus, penatibus pretium dui potenti iaculis mus odio sollicitudin dignissim, etiam sem vel facilisi dictumst urna montes turpis. Nascetur ridiculus cursus nisl aliquam laoreet facilisis id mus malesuada, enim blandit lobortis etiam ultricies felis ac turpis mollis, rhoncus fringilla venenatis ad fames porta congue per.</p>
@@ -41,7 +41,6 @@
                 <div id="ipsum_tab" class="tabcontent">
                     <p>Taciti curae maecenas dui consequat etiam dapibus risus est dignissim inceptos pharetra, donec sociis eleifend tellus proin ante ultrices penatibus quis interdum. Quis felis faucibus congue tortor mi in etiam ullamcorper parturient fusce aenean, augue magna metus luctus habitant lacinia hendrerit integer cras mollis, nam pharetra venenatis sociosqu morbi dictum blandit non maecenas natoque. Tristique litora aptent tempus dapibus ac vivamus molestie fames, felis cursus quisque et at torquent vestibulum iaculis ante, sociosqu ut taciti justo euismod cras posuere.</p>
                 </div>
-            </div>
         </div>
     </div>
 </body>
