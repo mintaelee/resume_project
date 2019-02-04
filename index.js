@@ -13,7 +13,7 @@ function openPage(pageName, elmnt) {
     }
   
     // Show the specific tab content
-    document.getElementById(pageName).style.display = "block";
+    document.getElementById(pageName).style.display = "flex";
   
   }
   
