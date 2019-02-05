@@ -1,76 +1,110 @@
+/* set up basic font */
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: grey;
 }
 
+/* create main flex container */
 #main_container{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 50px 10px 50px;
-}
-
-#content_container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 10px 100px;
-}
-
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: solid black 1px;
-    outline: solid black 1px;
-    cursor: pointer;
-    padding: 10px 10px;
-    font-size: 12px;
-    width: 25%;
-}
-  
-.tablink:hover {
-    background-color: #777;
-}
-
-.tabcontent {
-    background-color: #555;
-    color: black;
     height: 100%;
-}
-
-#avatar{
-    border-radius: 50%;
-    width: 200px;
 }
 
 #about_tab{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 80px 10px;
+    height: auto;
 }
 
+#avatar{
+    border-radius: 50%;
+    width: 200px;
+    border: solid white;
+}
+
+#content_container{
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 25px;
+    height: auto;
+}
+
+.tablink {
+    background-color: black;
+    color: white;
+    float: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 70px;
+}
+
+.tablink:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.tabcontent {
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0 0 10px 10px rgb(70, 70, 70);
+    display: none;
+    color: white;
+    height: auto;
+}
+
+
 #project_tab{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #555;
+    flex-shrink: 0;
     width: 100%;
 }
 
 #resume_tab{
     flex-direction: column;
+    height: 100%;
+    padding: 10px 50px;
+}
+
+#lorem_tab{
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 50px;
+}
+
+#ipsum_tab{
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 50px;
 }
 
 #content_tab{
     align-self: flex-start;
+    width: auto;
+}
+
+.project_pair{
+    display: flex;
+    flex-direction: column;
 }
 
 .projects{
     display: flex;
-    flex-direction: row;
     width: 300px;
     height: 400px;
+    margin: 50px
 }
 
 @media screen and (min-width: 700px){
@@ -80,14 +114,12 @@ body{
     }
 
     #content_container{
-        overflow-y: auto scroll;
+        height: 95vh;
+        overflow: hidden scroll;
     }
 }
 
-@media screen and (min-width: 900px){
-    #project_tab{
-        flex-direction: row;
-    }
+@media screen and (min-width: 1000px){
     .project_pair{
         flex-direction: row;
     }

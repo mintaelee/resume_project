@@ -1,4 +1,4 @@
-function openPage(pageName, elmnt) {
+function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -14,6 +14,9 @@ function openPage(pageName, elmnt) {
   
     // Show the specific tab content
     document.getElementById(pageName).style.display = "flex";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
   
   }
   
